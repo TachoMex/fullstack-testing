@@ -1,0 +1,13 @@
+#
+# GitPitch Slideshow Custom Settings
+#
+# For details, visit Wiki:
+# https://github.com/gitpitch/gitpitch/wiki/Slideshow-Settings
+#
+theme : black
+theme-override : assets/css/PITCHME.css
+highlight : hybrid
+background : assets/image/kueski-bg-1.png
+transition : fade
+published : true
+footnote : "Hands On Testing 2019 :: Seth Reyes / Gilberto Vargas"
