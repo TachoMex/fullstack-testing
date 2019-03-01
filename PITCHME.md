@@ -16,9 +16,11 @@ Kueski
 
 *	Desarrollo ágil
 *	Integración con el proceso
+* Probar la apliación una vez que está en producción
+* Probar la organización ante situaciones críticas
 
 ---
-¿Qué hace un QA Full-Stack?
+¿Qué busca el "QA Full-Stack"?
 
 *	Conocimiento del producto
 *	Prevención de defectos
@@ -39,27 +41,28 @@ Kueski
 
 Fase: Requerimiento
 
-*	Requirement validation
-*	Impact analysis
+*	Validación de requerimientos
+*	Analisis del impacto
 
 ---
 Fase: Diseño/Desarrollo
 
-*	Test planing
-*	Test Design
-*	Automation
+*	Planeación de las pruebas
+*	Diseño de las pruebas
+*	Automatización
 
 ---
 Fase: Integración/Testing
 
-*	Feature testing
-*	Regression testing
+*	Pruebas de los componentes
+* Pruebas de las características
+*	Pruebas de regresión
 *	UAT
 
 ---
 Fase: Deploy
 
-*	Automated smoke test
+*	Pruebas "smoke test" automatizadas
 * Staging
 *	Feature follow-up
 * sanity checks
@@ -69,21 +72,44 @@ Fase: Deploy
 	* etc
 
 ---
+Site Reliability Engineering (SRE)
+
+- Server Reboot Engineer
+- Responsables de la disponibilidad del sistema
+- Mejorar la confiabilidad de los sistemas
+
+---
+SRE y el primer SRE
+
+* Margaret Hamilton trabajaba en el progrma Apolo de la NASA y el MIT
+* Tenía una hija, Lauren la cual un día llevo al trabajo
+* Lauren como toda niña fue al trabajo y se fue a jugar en los simuladores
+* Una de las simulaciones falló debido a una mala configuración elegida por la piloto
+* Los datos de navegación de la nave fueron eliminados causando en un fracaso
+* Si esto hubiera pasado en una misión real, habría causado un accidente muy grande
+---
 Fase: Mantenimiento
 
 * Chaos monkey
 * Tirar recursos en producción de forma ordenada
 * Simulacros
-
+* Plan de recuperación ante castrofes (DRP)
 ---
-SRE y el primer SRE
+¿Mantenimiento antes de llegar a producción?
+
+* Configurar de forma errónea los servicios
+* Configurar usuarios con menos permisos de los necesarios
+* Tirar componentes parciales dentro de un ambiente
+* Relizar operaciones "peligrosas"
+* Reiniciar un servidor
 
 ---
 Fase: Incidencias
 
 * Postmortems
+* Mejoras a la infraestructura de monitoreo
 * Agregar casos de prueba
-* Analisis de la causa raìz
+* Analisis de la causa raíz
 
 ---
 Conclusión
