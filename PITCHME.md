@@ -14,7 +14,7 @@ Minimizar las perdidas debido a errores
 
 ---
 
-¿Qué es realmente el Full-Stack Testing?
+¿Qué es "Full-Stack Testing"?
 
 *	¿Front-end/Back-end?
 *	El testing no es una fase, es un proceso.
@@ -25,9 +25,10 @@ Minimizar las perdidas debido a errores
 ---
 ¿Por qué es importante un QA Full-Stack?
 
+* Detectar errores desde que se está diseñando el producto
 *	Desarrollo ágil
 *	Integración con el proceso
-* Probar la apliación una vez que está en producción
+* Probar la aplicación una vez que está en producción
 * Probar la organización ante situaciones críticas
 
 ---
@@ -35,7 +36,7 @@ Minimizar las perdidas debido a errores
 
 *	Conocimiento del producto
 *	Prevención de defectos
-* ¡Prevención de castrofes!
+* ¡Prevención de catástrofes!
 
 ---
 ¿Cómo suelen ver el desarrollo de un producto?
@@ -53,7 +54,7 @@ Minimizar las perdidas debido a errores
 Fase: Requerimiento
 
 *	Validación de requerimientos
-*	Analisis del impacto
+*	Análisis del impacto
 
 ---
 Fase: Diseño/Desarrollo
@@ -90,7 +91,7 @@ Site Reliability Engineering (SRE)
 - Mejorar la confiabilidad de los sistemas
 
 ---
-SRE y el primer SRE
+El primer SRE
 
 * Margaret Hamilton trabajaba en el progrma Apolo de la NASA y el MIT
 * Tenía una hija, Lauren la cual un día llevo al trabajo
@@ -116,7 +117,7 @@ Chaos monkey
 ---
 Botones de autodestrucción
 
-- ¿Qué operaciones de hacerse podrían detener la apliación?
+- ¿Qué operaciones de hacerse podrían detener la aplicación?
 - "No le aprietes ahí porque se rompe"
 - "Sí, pero de todos modos ya los usuarios saben que no le tienen que mover a eso"
 
@@ -126,7 +127,7 @@ Botones de autodestrucción
 * Configurar de forma errónea los servicios
 * Configurar usuarios con menos permisos de los necesarios
 * Tirar componentes parciales dentro de un ambiente
-* Relizar operaciones "peligrosas"
+* Realizar operaciones "peligrosas"
 * Reiniciar un servidor
 
 ---
@@ -135,7 +136,7 @@ Fase: Incidencias
 * Postmortems
 * Mejoras a la infraestructura de monitoreo
 * Agregar casos de prueba
-* Analisis de la causa raíz
+* Análisis de la causa raíz
 
 ---
 Postmortems
@@ -148,7 +149,13 @@ Postmortems
 ---
 Conclusión
 
-- Probar
+- Rompe los requerimientos antes de que inicien el desarrollo
+- Rompe el back end
+- Rompe el front end
+- Rompe los servidores
+- Configura mal los servidores
+- Tira servidores
+- Aprende de tus errores
 
 ---
 Contacto
@@ -159,12 +166,3 @@ Contacto
 	- gilberto@kueski.com
 - Seth Reyes.  Software Development Engineer in Test @ Kueski
 	- set.reyes@kueski.com
-
-
----
-Objetivos del QA en cada etapa
-Tabla de procesos/tecnologias/recursos
-Lecturas recomendadas
-Como probar front/back/integration
-Librerías de Unit test
-Herramientas de automation
