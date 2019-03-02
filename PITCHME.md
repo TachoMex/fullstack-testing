@@ -13,6 +13,17 @@ Kueski
 Minimizar las perdidas debido a errores
 
 ---
+Costos de encontrar un defecto por fase.
+
+- Mientras realizas tus pruebas unitarias
+- En un code review
+- En unas pruebas de exploración
+- En un demo frente al cliente
+- En producción durante el deployment
+- En producción días después del deployment
+- En producción meses después del deployment
+
+---
 
 ¿Qué es "Full-Stack Testing"?
 
