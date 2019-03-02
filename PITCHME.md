@@ -1,6 +1,6 @@
 Full-Stack Testing
 
-Seth Reyes/Gilberto Vargas
+Seth Reyes & Gilberto Vargas
 
 Kueski
 
