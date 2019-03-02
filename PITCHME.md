@@ -176,4 +176,4 @@ Contacto
 	- https://www.linkedin.com/in/tachomex
 	- gilberto@kueski.com
 - Seth Reyes.  Software Development Engineer in Test @ Kueski
-	- set.reyes@kueski.com
+	- seth.reyes@kueski.com
