@@ -387,6 +387,9 @@ Agile, Lean & Manejo de Organizaciones
 - Los devs a veces se emberrinchan y "no tiran esquina".
 - Los devs a veces se bloquean y "no piden paro".
 - Ayudar a que los proyectos salgan y la gestión del cambio no es para nada sencillo.
+---
+Agile, Lean & Manejo de Organizaciones
+
 - Ayudar a que la comunicación sea efectiva y evitar que se hagan cosas sin avisarle a posibles afectados es un problema enorme.
 - Las personas se creen todas poderosas y quieren resolver "la paz mundial" en un sprint.
 - El cliente/el de producto se enoja porque no puede meter mas tareas al sprint.
