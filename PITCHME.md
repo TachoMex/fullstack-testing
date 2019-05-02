@@ -27,7 +27,7 @@ Hablemos de historia 😴...
 La computación moderna se puede sustentar en 3 científicos:
 
 - Alan Turing
-- John Von Neomann
+- John Von Neumann
 - Claude Shannon
 
 ---
@@ -41,7 +41,7 @@ Apple
 En los años 80, Steve job y Steve Wozniak tuvieron la visión de que todo mundo
 podía tener una computadora en casa y desarrollaron la Apple I.
 ---
-Los evolución de los sistemas
+La evolución de los sistemas.
 
 - Sistemas monolíticos.
 - Sistemas de micronúcleo.
@@ -66,9 +66,9 @@ En los 2000:
 ---
 En los tiempos actuales:
 
-- Hay start ups para aventar pa'rriba.
+- Hay startups para aventar pa'rriba.
 - Los equipos de desarrollo trabajan desde su propia casa.
-- Los programadores pueden progrmar en pijama (sí claro, en pijama).
+- Los programadores pueden programar en pijama (sí claro, en pijama).
 - Las páginas web ya no son lo mas "cul".
 - Ahora todas las empresas quieren tener "aps".
 - La cantidad de tecnologías y prácticas es muy diversa para un simple profesionista de IT.
@@ -143,7 +143,7 @@ Mobile & Web Development
 ---
 Mobile & Web Development
 
-- Tienen que hacer que las cosas carguen rápido y sean ligeran.
+- Tienen que hacer que las cosas carguen rápido y sean ligeras.
 - Viven corriendo detrás de los frameworks y las dependencias.
 - Son tan malvados que hacen que te quedes sin datos.
 ---
@@ -183,7 +183,7 @@ Tecnologías para desarrollo "Back End"
 	- PHP (no lo haga compa).
 	- Java (por alguna razón el mercado lo sigue demandando).
 	- Python (muy de moda y se vuelve cada vez mas popular).
-	- Ruby (En kueski tenemos una relación odio con el).
+	- Ruby (En kueski tenemos una relación amor-odio con él).
 	- Go (Google es su papá).
 ---
 Tecnologías para desarrollo "Back End"
@@ -229,7 +229,7 @@ Tecnologías
 
 - Los que programan usan mucho Bash, Python y Go para programar.
 - Saben distinguir entre los 3 billones de distribuciones de linux.
-- Tienen conocmiento de Infraestructura en la nube: GCP, AWS, DigitalOcean, etc.
+- Tienen conocimiento de Infraestructura en la nube: GCP, AWS, DigitalOcean, etc.
 - Utilizan herramientas de Infraestructura como Código: Ansible, Terraform, Chef, etc.
 
 ---
@@ -260,7 +260,7 @@ Hardware Ops & Network
 Tecnologías
 
 - Le mueven bien perron a todos los sistemas operativos.
-- Cableo estrucurado. Se saben todos los estándares de la IEEE.
+- Cableo estructurado. Se saben todos los estándares de la IEEE.
 - Conocen el modelo OSI a la perfección.
 - Cisco y tecnologías para creación de Redes.
 - Configuración de discos duros.
@@ -299,7 +299,7 @@ Data Science & Analytics
 - Estos compas saben de funciones, cálculo y ecuaciones diferenciales un buen.
 - De estadística saben todavía más.
 - Saben lo básico de bases de datos para poder comprobar hipótesis.
-- Programan modelos de "machine lerning".
+- Programan modelos de "machine learning".
 	- Clustering
 	- Decision Trees
 	- ANN
@@ -314,8 +314,8 @@ Tecnologías
 - Python
 
 ---
-¿Cómo hacen para que lo que programan los cientificos de datos tenga la misma calidad que lo que desarrolla un Dev?
-¿Si tienes muchas bases de datos, cómo integras todo en un solo lugar para poder hacer analisis de datos?
+¿Cómo hacen para que lo que programan los científicos de datos tenga la misma calidad que lo que desarrolla un Dev?
+¿Si tienes muchas bases de datos, cómo integras todo en un solo lugar para poder hacer análisis de datos?
 ---
 Data Engineering
 
