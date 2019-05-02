@@ -11,6 +11,9 @@ Mi historia:
 - Ingeniero en computación de CUCEI UdeG 2012-2015.
 - No fui al mundial pero le eché un ch**go de ganas en el ACM.
 - Me gustaba mucho la criptografía, el desarrollo de videojuegos, los fractales, los sistemas distribuidos y la inteligencia artificial.
+---
+Mi historia:
+
 - Después de haber programado PHP y un poco de JS con Bootstrap decidí que el desarrollo web no era lo mio.
 - Entre a kueski en el 2016 como desarrollador Web.
 - Me pusieron a atender "bombereadas" después de 6 meses en kueski.
@@ -21,7 +24,6 @@ Breve resumen de la computación moderna.
 
 Hablemos de historia 😴...
 ---
-
 La computación moderna se puede sustentar en 3 científicos:
 
 - Alan Turing
@@ -41,17 +43,17 @@ podía tener una computadora en casa y desarrollaron la Apple I.
 ---
 Los evolución de los sistemas
 
-- Sistemas monoliticos
-- Sistemas de micronúcleo
-- Sistemas conectados por red
-- Sistemas distribuidos
+- Sistemas monolíticos.
+- Sistemas de micronúcleo.
+- Sistemas conectados por red.
+- Sistemas distribuidos.
 
 ---
 En los 90:
 
 - Todas las empresas querían tener un departamento de IT.
-- Los proyectos de Tecnología eran muy costos y rompían con la operación.
-- Las grandes Compañias se unian al "mame" de tener su sitio web.
+- Los proyectos de tecnología eran muy costos y rompían con la operación.
+- Las grandes compañías se unian al "mame" de tener su sitio web.
 - Los sitios web eran feos y tenían letras de colores.
 
 ---
@@ -69,7 +71,7 @@ En los tiempos actuales:
 - Los programadores pueden progrmar en pijama (sí claro, en pijama).
 - Las páginas web ya no son lo mas "cul".
 - Ahora todas las empresas quieren tener "aps".
-- La cantidad de tecnologías y prácticas es muy diversa para un simple profesista de TI.
+- La cantidad de tecnologías y prácticas es muy diversa para un simple profesionista de IT.
 ---
 Compañias más valiosas en el mundo
 
@@ -129,6 +131,7 @@ La constante entre todas estas empresas:
 - Física.
 - Matemáticas.
 ---
+¿Cómo se ha logrado todo esto?
 ¿Por dónde empezar?
 
 ---
@@ -136,6 +139,10 @@ Mobile & Web Development
 
 - Son muy similares a los leñadores (lentes, barba y camisa de cuadritos).
 - Entienden un poquito de diseño y expresión grafica, pero un diseñador les sigue poniendo sus cachetadas.
+
+---
+Mobile & Web Development
+
 - Tienen que hacer que las cosas carguen rápido y sean ligeran.
 - Viven corriendo detrás de los frameworks y las dependencias.
 - Son tan malvados que hacen que te quedes sin datos.
@@ -151,12 +158,13 @@ Tecnologías del desarrollo Web
 
 - JS y los mil frameworks.
 - Probablemente mientras estamos aquí hayan salido otros 10 nuevos.
-- React, Angular, Vue, Polymer.
+- React, Angular, Vue, Polymer, etc.
 - CSS y HTML para que no se vea feo como hace 25 años.
 - Si dices que HTML es un lenguaje de programación, hay tabla.
 ---
 
 Muy chido y todo, pero lás páginas web y las apps por sí solas no hacen mucho.
+
 ¿A dónde se conectan?
 
 ---
@@ -171,13 +179,16 @@ Desarrolladores "Back end"
 ---
 Tecnologías para desarrollo "Back End"
 
-- Protocolos de comunicación y servicios Web: HTTP, SOAP, REST, RPC, Protocol Buffer.
 - Muchos lenguajes de programación:
 	- PHP (no lo haga compa).
 	- Java (por alguna razón el mercado lo sigue demandando).
 	- Python (muy de moda y se vuelve cada vez mas popular).
 	- Ruby (En kueski tenemos una relación odio con el).
 	- Go (Google es su papá).
+---
+Tecnologías para desarrollo "Back End"
+
+- Protocolos de comunicación y servicios Web: HTTP, SOAP, REST, RPC, Protocol Buffer.
 - Bases de datos:
 	- SQL: MySQL, PostgreSQL, MariaDB, Oracle.
 	- NoSQL: Cassandra, Mongo, Neo4J.
@@ -187,11 +198,11 @@ Tecnologías para desarrollo "Back End"
 ---
 
 Tener muchas aplicaciones y tecnologías corriendo es un problema muy grande,
-¿Cómo le hacen para tener todo bajo control?
-¿Quíen cuida que las cosas estén corriendo?
-¿Si se llena un disco duro?
-¿Dónde hacen pruebas para verificar que todo está bien?
-¿Cómo saben cuando los servidores no van a aguantar el tráfico?
+- ¿Cómo le hacen para tener todo bajo control?
+- ¿Quíen cuida que las cosas estén corriendo?
+- ¿Si se llena un disco duro?
+- ¿Dónde hacen pruebas para verificar que todo está bien?
+- ¿Cómo saben cuando los servidores no van a aguantar el tráfico?
 
 ---
 DevOps, SRE & SysAdmin
@@ -202,13 +213,13 @@ DevOps, SRE & SysAdmin
 - Automatización de creación de servidores.
 - Los contenedores son tendencia.
 - Los más rifados son los que no dejan de programar.
-- Les pagan billetes por reiniciar servidores.
-- Le echan la culpa de todo a los Devs.
 - ...
 
 ---
 DevOps, SRE & SysAdmin
 
+- Les pagan billetes por reiniciar servidores.
+- Le echan la culpa de todo a los Devs.
 - Automatizan su chamba hasta que logran creer que en realidad son bots (así le hice para venir a dar la charla).
 - Crean ambientes de pruebas de forma automática.
 - Acomodan las bases de datos.
@@ -220,16 +231,20 @@ Tecnologías
 - Saben distinguir entre los 3 billones de distribuciones de linux.
 - Tienen conocmiento de Infraestructura en la nube: GCP, AWS, DigitalOcean, etc.
 - Utilizan herramientas de Infraestructura como Código: Ansible, Terraform, Chef, etc.
+
+---
+Tecnologías
+
 - Le mueven chido a docker sin romper nada, uno que otro sabe de kubernetes.
 - Monitorizar sistemas, ELK para cuando no hay varo, splunk, datadog, new relic y aguacate cuando sí.
 - Y cualquier cosa que se necesite configurar.
 
 ---
 Suena a que necesitan muchas computadoras.
-¿Cómo logras tener tantas computadoras juntas?
-¿Cómo haces para que soporten el tráfico de red?
-¿Qué pasa si un disco se rompe?
-¿Quien va a las 3 de la mañana a cambiar un cable?
+- ¿Cómo logras tener tantas computadoras juntas?
+- ¿Cómo haces para que soporten el tráfico de red?
+- ¿Qué pasa si un disco se rompe?
+- ¿Quien va a las 3 de la mañana a cambiar un cable?
 
 ---
 Hardware Ops & Network
@@ -306,7 +321,7 @@ Data Engineering
 
 - Diseñan "pipelines" de datos.
 - Consolidan los datos en un lugar.
--
+- ETL y DataLake para BigData.
 
 ---
 Tecnologías
@@ -318,9 +333,14 @@ Tecnologías
 - Excel por si hay que agregar el reporte del contador a la base de datos también.
 ---
 ¿Me estás diciendo que entonces se almacenan todos los datos en un solo lugar?
-¿No es eso riesgoso? ¿Qué pasa si se filtran los datos? Hablando de seguridad...
-¿Cómo controlas los accesos a las aplicaciones? ¿Cómo evitas que las personas fuera del
-equipo de IT peguen las contraseñas en un post-it junto al teclado?
+
+¿No es eso riesgoso?
+
+¿Qué pasa si se filtran los datos? Hablando de seguridad...
+
+¿Cómo controlas los accesos a las aplicaciones?
+
+¿Cómo evitas que las personas fuera del equipo de IT peguen las contraseñas en un post-it junto al teclado?
 
 ---
 Security Engineers
