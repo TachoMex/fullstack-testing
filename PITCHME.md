@@ -13,7 +13,7 @@ Motivación de la charla
 
 - Pocas personas saben qué es una VPC y aun un menor número las han levantado de cero.
 - Todas las personas que trabajan con AWS utilizan una VPC, este número es mucho más alto que el anterior.
-- No busco que sean experto, pero al menos que sepan donde buscar.
+- No busco que sean expertos, pero al menos que sepan dónde buscar.
 
 ---
 Conceptos clave:
@@ -77,15 +77,18 @@ Segunda trampa: Manejando inventarios.
 - Evita utilizar prefijos/sufijos como "server", "api", "service", "miempresa".
 - Utiliza etiquetas que permitan distinguir entre ambientes productivos y de pruebas.
 - De preferencia, utiliza una cuenta distinta para mantener producción separada de desarrollo.
-- Un hechizo simple pero inquebrantable:
-	- `%env-%resource`
-	- Utiliza solo minúsculas y guión bajo para los nombres de los recursos.
-	- Comunica la notación con el equipo y refuerza la utilización.
+---
+Un hechizo simple pero inquebrantable:
+- `%env-%resource`
+- Utiliza solo minúsculas y guión bajo para los nombres de los recursos.
+- Comunica la notación con el equipo y refuerza la utilización.
+
 ---
 Hands on:
 - Levantar un blog en wordpress.
 - Levantar mysql en un servidor en una red privada sin acceso directo a internet.
-- Inventario:
+---
+Inventario:
 	- Una VPC.
 	- Una red "private"
 	- Una red "public"
@@ -93,23 +96,72 @@ Hands on:
 	- Un "Nat Gateway"
 	- Un servidor para correr wordpress
 	- Un servidor para correr mysql
-	- Instalar wordpress y mysql en los servidores
 ---
-- Crear una VPC que se llame j4g, con un CIDR `10.4.0.0/16`
-- Crear una subred "public" con un CIDR `10.4.1.0/24`
-- Crear una subred "private" con un CIDR `10.4.2.0/24`
-- Crear un Internet Gateway "j4g"	y adjuntarlo a la VPC
-- Crear un nat Gateway "j4g" asignandole una IP elastica nueva y ponerlo en la red public.
-- Crear una tabla de ruteo publica:
-	- Asignarla a la VPC.
-	- Agregar la regla `0.0.0.0/0` para que salga por el IG
+Crear una VPC que se llame j4g, con un CIDR `10.4.0.0/16`
+![-](assets/image/create_vpc.png)
+---
+Crear una subred "public" con un CIDR `10.4.1.0/24`
+![-](assets/image/create_public.png)
+---
+Crear una subred "private" con un CIDR `10.4.2.0/24`
+![-](assets/image/create_priv.png)
+---
+Crear un Internet Gateway "j4g"	y adjuntarlo a la VPC
+![-](assets/image/create_ig.png)
+![-](assets/image/attach_ig.png)
+---
+Crear un nat Gateway "j4g" asignandole una IP elastica nueva y ponerlo en la red public.
+![-](assets/image/create_nat.png)
+---
 - Crear una tabla de ruteo privada:
-	- Asignarla a la VPC.
-	- Agregar la regla `0.0.0.0/0` para que salga por el NAT
-- Asignar las tablas de ruteo a las respectivas redes.
+- Asignarla a la VPC.
+![-](assets/image/create_rt_priv.png)
+---
+![-](assets/image/edit_rt.png)
+---
+- Agregar la regla `0.0.0.0/0` para que salga por el NAT
+![-](assets/image/edit_rt_priv.png)
+---
+- Crear una tabla de ruteo publica:
+- Asignarla a la VPC.
+- Agregar la regla `0.0.0.0/0` para que salga por el IG
+![-](assets/image/edit_rt_pub.png)
+---
+Asignar las tablas de ruteo a las respectivas redes.
+![-](assets/image/attach_rt.png)
+---
+![-](assets/image/attach_rt_priv.png)
+---
 - Crear un servidor con una ip pública en la red "public" para correr wordpress
-- Crear un servidor sin una ip pública en la red "private" para correr mysql
-- Configurar wordpress
+![-](assets/image/ami_choose.png)
+---
+![-](assets/image/choose_instance.png)
+---
+![-](assets/image/blog_disk.png)
+---
+![-](assets/image/blog_server_config.png)
+---
+![-](assets/image/blog_sg.png)
+---
+![-](assets/image/blog_tags.png)
+---
+![-](assets/image/blog_lauch.png)
+---
+![-](assets/image/blog_starting.png)
+---
+![-](assets/image/blog_test.png)
+---
+Crear un servidor sin una ip pública en la red "private" para correr mysql
+![-](assets/image/database_config.png)
+---
+![-](assets/image/db_tags.png)
+---
+![-](assets/image/db_launch.png)
+---
+![-](assets/image/db_test.png)
+---
+Configurar wordpress
+![-](assets/image/running_blog.png)
 ---
 Tercer trampa: Utilizar la consola (UI) de amazon para crear recursos productivos.
 
@@ -118,29 +170,57 @@ Tercer trampa: Utilizar la consola (UI) de amazon para crear recursos productivo
 - Mucho trabajo manual y repetitivo, con mayor probabilidad de error.
 
 ---
-Ansible, Terraform, AWS-SDK.
+Ansible
 
 - Utiliza la alternativa que mejor se adapte al equipo.
 - Ansible:
 	- Herramienta para automatización de configuraciones y construcción de servidores.
 	- Es imperativa.
-- Terraform:
-	- Herramienta de infraestructura como código enfocada a la orquestación.
-	- Es declarativa.
-- AWS-SDK:
-	- Permite hacer invocaciones a AWS dentro de nuetro lenguaje de programación favorito.
-	- Sería reinventar ansible o terraform, pero puede adaptarse mejor a las necesidades del equipo.
-	- AWS provee cloud formation para esto, pero simplemente "no lo haga compa":
-		- Si actualizas la platilla de CF, destruye todo lo que cambia para reconstruirlo.
-		- Si un recurso ya existe y no lo esperaba ahí falla.
-		- Si se modifica de forma manual algún recurso puede romperse todo.
-		- Es un archivo YAML que se hace muy dificil de gestionar.
+---
+Terraform
+
+- Herramienta de infraestructura como código enfocada a la orquestación.
+- Es declarativa.
+---
+AWS-SDK
+
+- Permite hacer invocaciones a AWS dentro de nuetro lenguaje de programación favorito.
+- Sería reinventar ansible o terraform, pero puede adaptarse mejor a las necesidades del equipo.
+---
+Cloud Formation
+
+AWS provee cloud formation para esto, pero simplemente "no lo haga compa":
+	- Si actualizas la platilla de CF, destruye todo lo que cambia para reconstruirlo.
+	- Si un recurso ya existe y no lo esperaba ahí falla.
+	- Si se modifica de forma manual algún recurso puede romperse todo.
+	- Es un archivo YAML que se hace muy dificil de gestionar.
+---
+Ejercicios
+---
+¿Qué pasa si configuro una instancia en una red privada y le adjunto una red pública?
+---
+¿Cómo se puede configurar una NAT de forma manual?
+---
+¿Qué IP pública tienen los servidores de las redes privadas?
+---
+¿Cómo harías una integración con un proveedor que te ofrece el servicio por VPN?
+---
+¿Qué es mejor? ¿VPN o Nat Gateway?
+---
+Conclusiones
+
+Tras este viaje, deberías de saber:
+- Cómo es eso de los CIDR y mas o menos cómo googlear para diseñar una red.
+- En dónde poner atención al momento de configurar una VPC.
+- Entender todos los componentes necesarios para montar una VPC.
+- Segmentación de la red en una VPC.
+
 
 ---
 Contacto
 
-- Gilberto Vargas. Site Reliability Engineer @ Kueski
-  - github.com/
-	- https://www.linkedin.com/in/tachomex
-	- gilberto@kueski.com
-	- https://tacho.codes
+Gilberto Vargas. Site Reliability Engineer @ Kueski
+- github.com/tachomex
+- https://www.linkedin.com/in/tachomex
+- gilberto@kueski.com
+- https://tacho.codes
