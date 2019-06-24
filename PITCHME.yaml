@@ -7,7 +7,7 @@
 theme : black
 theme-override : assets/css/PITCHME.css
 highlight : hybrid
-background : assets/image/kueski-bg-1.png
+background : assets/image/background.png
 transition : fade
 published : true
-footnote : "Hands On Testing 2019 :: Seth Reyes / Gilberto Vargas"
+footnote : "J4G Junio 2019 >> Gilberto Vargas << Kueski"
